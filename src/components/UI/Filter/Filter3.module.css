@@ -1,0 +1,90 @@
+.filter{
+    display: flex;
+    align-items: center;
+}
+
+.filter label{
+    font-weight: var(--medium-text);
+    font-size: 20px;
+    line-height: 26px; 
+    letter-spacing: 0.03em;
+    
+}
+.filter_price form {
+    display: inline;
+} 
+
+.filter_price label{
+    margin-right: 30px;
+}
+
+.search_form input{
+    margin-right: 15px;
+    padding: 9px 12px;
+
+    width: 103px;
+    height: 42px;
+
+    border: 1px solid var(--black-color);
+    border-radius: 7px;
+
+} 
+
+.filter_checkbox{
+    margin-left: 25px;
+    display: block;
+    position: relative;
+    padding-top: 8px;
+    padding-left: 36px;
+    margin-top: 1px;
+    margin-bottom: 12px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.filter_checkbox label{
+    margin-right: 30px;
+}
+
+.filter_checkbox input{
+    /* display: none; */
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 1px;
+    right: -30px;
+    height: 40px;
+    width: 40px;
+    background-color: #ffffff;
+    border: 1px solid var(--black-color);
+    border-radius: 7px;
+}
+/* Show the checkmark when checked */
+.filter_checkbox input:checked ~ .checkmark:after {
+    display: block;
+} 
+
+/* 
+Style the checkmark/indicator*/
+.filter_checkbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+
+} 
+
+
+
+.filter_sort{
+    margin-left: 50px;
+}
+

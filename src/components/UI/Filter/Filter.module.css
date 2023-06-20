@@ -1,0 +1,144 @@
+.filter {
+    margin-bottom: 34px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.filter label, span{
+    font-weight: var(--medium-text);
+    font-size: 20px;
+    line-height: 26px; 
+    letter-spacing: 0.03em;
+}
+
+.filter_price{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+/* .search_form input{
+    margin-right: 15px;
+    padding: 9px 12px;
+
+    width: 103px;
+    height: 42px;
+
+    border: 1px solid var(--black-color);
+    border-radius: 7px;
+} */
+
+.filter_checkbox{
+    margin-right: 90px;
+    display: flex;
+    align-items: baseline;
+
+}
+.filter_checkbox_wrapper {
+    margin-top: 1px;
+    margin-bottom: 12px;
+    padding-top: 8px;
+    padding-left: 40px; 
+
+    display: block;
+    position: relative;
+        
+    font-size: 17px;
+    cursor: pointer;
+
+}
+  /* Hide the browser's default checkbox */
+.filter_checkbox_wrapper input {
+    opacity: 0;
+}
+
+  /* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 4px;
+    right: -60px;
+    height: 40px;
+    width: 40px;
+    background-color: #ffffff;
+    border: 1px solid var(--black-color);
+    border-radius: 7px;
+}
+
+  /* When the checkbox is checked, add a green background */
+.filter_checkbox_wrapper input:checked ~ .checkmark {
+    background-color: var(--green-color);
+    border:none;
+}
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    position: absolute;
+    content: "";
+    
+    display: none;
+}
+
+  /* Show the checkmark when checked */
+.filter_checkbox_wrapper input:checked ~ .checkmark:after {
+    display: block;
+}
+
+  /* Style the checkmark/indicator */
+.filter_checkbox_wrapper .checkmark:after {
+    left: 18px;
+    top: 11px;
+    width: 5px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 3px 3px 0; 
+    transform: rotate(45deg);
+}
+
+.filter_sort {
+    margin-left: 70px;
+	/* margin-left: 130px;  */
+    /* padding-left: 135px;  */
+    min-width: 219px;
+	display: flex;
+	align-items: center;
+    gap: 35px;
+}
+.without_discount{
+    margin-left: 50px;
+}
+.sort_wrapper {
+	height: 40px;
+
+	font-size: 16px;
+    font-weight: var(--normal-text);
+	letter-spacing: 0.03em;
+    
+	border: 1px solid var(--black-color);
+	border-radius: 7px;
+
+	transition: var(--transition);
+}
+
+@media (max-width: 1190px) {
+    .filter_sort {
+        margin-left: 0;
+    }  
+}
+
+@media (max-width: 768px) {
+    .filter {
+        padding-bottom: 40px;
+        flex-direction: column;
+        gap: 20px;
+        align-items: start;
+    }
+    .filter_price{
+        gap: 10px;
+        align-items: center;
+    }
+    .filter_checkbox_wrapper{
+        padding-left: 0; 
+    }
+}

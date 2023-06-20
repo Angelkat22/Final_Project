@@ -1,0 +1,31 @@
+.sale_list_section{
+    margin: 0 30px;
+} 
+
+.sale_list_title {
+    margin: 50px 0 20px;
+    font-weight: var(--bold-text);
+    font-size: 40px;
+}
+
+@media (max-width: 1100px) {
+	.categories_list {
+		grid-template-columns: repeat(3, 1fr);
+		gap: auto;
+	}
+
+}
+
+@media (max-width: 500px) {
+	.sale_list_section {
+		display: flex;
+        align-items: center;
+		flex-direction: column; 
+	}
+	.sale_list_title{
+        align-items: center;
+		font-size: 30px;
+	}
+		
+}
+

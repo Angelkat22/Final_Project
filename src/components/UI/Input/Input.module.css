@@ -1,0 +1,61 @@
+.price_search_form {
+    padding: 9px 12px;
+    margin-right: 10px;
+
+    width: 112px;
+    height: 40px;
+
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+.discount_input {
+    padding-left: 50px;
+
+    height: 75px;
+	font-size: 18px;
+
+    border-radius: 25px;
+    outline: none;
+    border: none;
+
+}
+
+.order_input {
+    padding-left: 25px;
+
+    font-size: 18px;
+    width: 100%;
+    height: 70px;
+    background-color: var(--white-color);
+
+    border: 1px solid var(--black-color);
+    border-radius: 20px;
+    outline: none;
+    
+}
+@media (max-width: 1320px) {
+    .order_input{
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .price_search_form {
+        width: 80px;
+    }
+    .order_input{
+        max-width: 300px;
+        font-size: 23px;
+    }
+    
+}
+
+@media (max-width: 550px) {
+    .discount_input {
+        height: 40px;
+        font-size: 15px;
+
+    }
+}
+

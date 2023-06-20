@@ -1,0 +1,180 @@
+.header_btn {
+    padding: 14px 30px;
+
+    background-color: var(--green-color);
+    color:var(--white-color);
+    font-weight: var(--bold-text);
+
+    border: 2px solid var(--green-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--transition);
+
+    letter-spacing: 1px;
+} 
+
+.header_btn:hover {
+    color: var(--black-color);
+    background-color: var(--white-color);
+}
+
+.sale_btn {
+    margin-top: 60px;
+    padding: 25px 50px;
+
+    font-size: 25px;
+    color: var(--black-color);
+    font-weight: var(--bold-text);
+
+    background-color: var(--white-color);
+    border: 2px solid var(--white-color);
+    border-radius: 15px;
+
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.sale_btn:hover {
+    color: var(--white-color);
+    background-color: var(--green-color);
+    border: none;
+}
+
+.catalog_btn{
+    width: 120px;
+    height: 31px;
+
+    font-size: 12px;
+    font-weight: var(--bold-text);
+    letter-spacing: 0.03em; 
+
+    text-align: center;
+    color: #8b8b8b;
+    background-color: var(--white-color);
+    border: 3px solid #8b8b8b;
+    line-height: 16px;
+    
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.catalog_btn:hover {
+    scale: 1.2;
+}
+
+.discount_btn {
+    font-size: 28px;
+    font-weight: var(--bold-text);
+    color: var(--white-color);
+    background-color: transparent;
+    
+    height: 75px;
+    border: 2px solid var(--white-color);
+    border-radius: 25px;
+
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.discount_btn:hover {
+    background-color: var(--white-color);
+    color: var(--green-color);
+}
+
+.to_cart_btn {
+    position: absolute;
+    top: 70%; 
+    left: 10px;
+
+    width: 280px;
+    height: 72px;
+
+    color: var(--green-color);
+    font-weight: var(--medium-text);
+    font-size: 18px;
+    
+    background-color: #F1FFF1;
+    border: 2px solid var(--green-color);
+    border-radius: 21px;
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+} 
+
+.item_to_cart_btn{
+    /* padding: 25px 120px; */
+
+    /* width: 341px; */
+    max-width: 340px;
+    /* width: 100%; */
+    height: 86px;
+    background-color: var(--green-color);
+
+    color: var(--white-color);
+    font-weight:var(--bold-text);
+    font-size: 28px;
+    line-height: 36px;
+
+    border: 2px solid var(--green-color);
+    border-radius: 10px;
+
+    transition: var(--transition);
+}
+
+.item_to_cart_btn:hover {
+    background-color: var(--white-color);
+    color: var(--green-color);
+
+    cursor: pointer;
+}
+.order_btn{
+    height: 70px;
+    color: var(--white-color);
+    font-weight: var(--bold-text);
+    font-size: 28px;
+
+    background-color: var(--green-color);
+    border: 2px solid var(--green-color);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.order_btn:hover {
+    background-color: var(--white-color);
+    color: var(--green-color);
+}
+
+@media (max-width: 1320px) {
+    .order_btn{
+        max-width: 400px;
+    }
+}
+@media (max-width: 1100px) {
+    .order_btn{
+        max-width: 300px;
+        font-size: 23px;
+    }
+}
+
+@media (max-width:785px){
+    .header_btn {
+        padding: 10px 25px;
+        } 
+    .sale_btn { 
+        max-width: 300px;
+        height: 75px;
+        padding: 20px 50px;
+        /* font-size: 20px; */
+    }
+    .item_to_cart_btn{
+        max-width:none; 
+    }
+}
+@media (max-width: 550px) {
+    .discount_btn {
+        height: 40px;
+        font-size: 15px;
+    }
+}
+
+

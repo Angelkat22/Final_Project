@@ -1,0 +1,149 @@
+.contacts_wrapper {
+    margin: 80px 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 140px;
+}
+
+.contacts_title {
+    margin-bottom: 25px;
+
+    font-size: 40px;
+    font-weight: var(--bold-text);
+}
+
+.contacts_phone {
+    margin-bottom: 32px;
+
+    font-size: 70px;
+    font-weight: var(--medium-text);
+
+    white-space: nowrap;
+
+}
+
+.soc_media {
+    display: flex;
+    text-align: center;
+    gap: 70px;
+}
+
+.soc_media_icon{
+    font-size: 44px;
+}
+
+.insta p,
+.whatsapp p {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: var(--bold-text); 
+
+}
+.insta:hover,
+.whatsapp:hover {
+    scale: 1.2;
+}
+.address {
+	padding: 0 5px;
+	flex-shrink: 0;
+}
+.contacts_adress {
+    font-size: 40px;
+    font-weight: var(--medium-text);
+    line-height: 52px;
+
+	border-bottom: 3px solid var(--black-color);
+}
+
+.contacts_adress:hover{
+    color: var(--green-color);
+}
+/* .address p {
+    margin-bottom: 2px;
+
+    font-size: 18px;
+    font-weight: 500;
+} */
+.schedule{
+    margin-top: 20px;
+}
+.hours {
+    margin-top: 2px;
+    font-size: 24px;
+    font-weight: var(--medium-text);
+    line-height: 31px;
+}
+
+@media (max-width:1375px) {
+    .contacts_wrapper{
+        gap: 0px;
+    }
+    .contacts_phone {
+        font-size: 50px;
+    }
+    .contacts_adress {
+        font-size: 35px;
+        line-height: 42px;
+    }
+}
+
+@media (max-width:1195px) {
+    .contacts_adress {
+        font-size: 30px;
+    }
+    .contacts_phone {
+        font-size: 45px;
+    }
+    .hours {
+        font-size: 18px;
+    }
+}
+@media (max-width:950px) {
+    
+    .contacts_adress {
+        font-size: 15px;
+    }
+    .contacts_phone {
+        font-size: 35px;
+    }
+     .soc_media_icon{
+        font-size: 35px;
+    }
+    .contacts_adress {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .contacts_wrapper {
+        flex-direction: column;
+        max-width: 270px;
+        gap: 60px;
+    }
+}
+
+@media (max-width: 500px) {
+    .contacts_wrapper {
+        max-width: 220px;
+    
+    }
+    .contacts_title,
+    .contacts_phone {
+        font-size: 20px;
+    }
+    .contacts_adress,
+    .hours {
+        font-size: 16px;
+    }
+}
+
+/* @media (max-width: 375px) {
+
+    .contacts_wrapper{
+        align-items: center;
+    }
+
+} */
+

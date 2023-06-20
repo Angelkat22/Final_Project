@@ -1,0 +1,55 @@
+.mobile_menu {
+    display: none;
+    position: relative;
+    width: 30px;
+    cursor: pointer;
+
+}
+
+.active_mobile_menu {
+    width: 30px;
+    position: relative;
+    z-index: 3;
+}
+
+.mobile_line {
+    margin-bottom: 7px;
+    top: 8px;
+    display: block;
+        
+    height: 3px;
+    width: 30px;
+    background-color: black;
+    border-radius: 2px;
+    transition: all .5s;
+}
+
+.active_mobile_menu .mobile_line:first-child {
+    top: 10px;
+    position: absolute;
+    background-color: black;
+    transform: rotate(45deg);
+    transition: var(--transition);
+
+}
+
+.active_mobile_menu .mobile_line:nth-child(2) {
+    background-color: transparent;
+
+}
+
+.active_mobile_menu .mobile_line:last-child {
+    top: 10px;
+
+    background-color:black;
+    transform: rotate(-45deg);
+    transition: var(--transition);
+
+}
+
+@media (max-width: 780px) {
+    .mobile_menu {
+        display: block;
+    }
+} 
+

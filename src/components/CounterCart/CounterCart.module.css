@@ -1,0 +1,18 @@
+.counter_cart {
+    position: absolute;
+
+    height: 25px;
+    width: 25px;
+    background-color: var(--green-color);
+    
+    color: var(--white-color);
+    border-radius: 50%;
+
+    bottom: 15px;
+    right: -13px;
+}
+
+.counter_cart p {
+    padding-top: 3px; 
+    text-align: center;
+}

@@ -1,0 +1,13 @@
+/* .products_list {
+    margin: 80px 30px 30px;
+} */
+
+.products_list {
+    margin: 130px 30px 30px;
+}
+.products_page_title {
+    margin-bottom: 80px;
+    font-weight: var(--bold-text);
+    font-size: 40px;
+    
+}
